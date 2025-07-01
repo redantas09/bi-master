@@ -96,7 +96,7 @@ O quarto e último dashboard projetado foi o de visão de prontidão de atividad
 
 ### 4. Conclusões
 
-Este trabalo foi uma oportunidade de desenvolver todo o processo do BI. A partir do levantamento e descrição do modelo transacional por meio de planilhas e entrevistas foi possível fazer a proposta do processo de BI, com o desenvolvimento do Modelo Multidimensional e criação do Data Warehouse. A elaboração dos Dashboards visou o atendimento dos requisitos levantados com a área.
+Este trabalho foi uma oportunidade de desenvolver todo o processo do BI. A partir do levantamento e descrição do modelo transacional por meio de planilhas e entrevistas foi possível fazer a proposta do processo de BI, com o desenvolvimento do Modelo Multidimensional e criação do Data Warehouse. A elaboração dos Dashboards visou o atendimento dos requisitos levantados com a área.
 
 Desta forma, será possível ter informações atualizadas sobre o negócio de maneira rápida e intuitiva o que permitirá um acompanhamento contínuo e uma rápida e assertiva tomada de decisão a fim de atingir todos os objetivos de entrada em produção de poços novos, de atendimento de datas de integridade e de realização das atividades de modo geral.
 
