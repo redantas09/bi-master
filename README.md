@@ -24,7 +24,7 @@ O projeto irá trazer sondas como fato a ser estudado, levando em consideração
 
 Deseja-se que o projeto permita obter relatórios com uma visão geral das atividades, com a visão de atendimento às datas limites de poços com situações relacionadas a integridade, com visão de atendimento às datas de entrada de poços novos e com a situação de prontidão para realização das atividades.
 
-Por questões de sigilosidade dos dados está sendo usada no presente trabalho uma base de dados fictícia. 
+Por questões de sigilosidade estão sendo usados no presente trabalho dados fictícios. 
 
 ### 2. Modelagem
 
@@ -32,7 +32,7 @@ A realização do projeto teve início com a descrição do modelo transacional.
 Através dos dados obtidos foi possível gerar o modelo transacional conforme o diagrama a seguir:
 ![image](https://github.com/user-attachments/assets/f4d19418-e5b6-4b95-a1cc-43600cb7f9ae)
 
-Em seguida foi montado o processo de BI, que propõe a criação de um banco de dados em SQL com a replicação do modelo transacional.
+Em seguida, foi montado o processo de BI, que propõe a criação de um banco de dados em SQL com a replicação do modelo transacional.
 Porpõe-se a realização do ETL de forma semanal, uma vez que, conforme levantado com os usuários, essa é menor frequência na qual é realizada a atualização dos dados, com a carga das dimensões prontidão SUB, prontidão SPO, cronograma de atividades, base de poços, integridade e entrada de poços novos, executada através do software Pentaho Data Integration (PDI), onde um JOB será responsável pela atualização do Data Warehouse. A partir dos dados do Data Warehouse serão gerados dashboards, utilizando o Power BI, com as informações relevantes para as necessidades da empresa.
 
 Na sequência, foi definido o modelo multidimensional referente ao presente projeto, o qual foi desenvolvido considerando o processo de análise das necessidades da área. Nele, constam as dimensões prontidão SUB, prontidão SPO, cronograma de sondas, base de poços, integridade, entrada de poços novos e data, conforme representado abaixo, figura extraída do Power Architect.
@@ -41,7 +41,7 @@ Na sequência, foi definido o modelo multidimensional referente ao presente proj
 
 Prosseguiu-se, então, para a elaboração do Data Warehouse, que será a fonte integradora de informações da área. A arquitetura do DW será Global e Centralizada, pois embora outras áreas atuem no processo, o controle da programação é feito pela área em questão. Como a arquitetura será Global e Centralizada não serão construídos Data Marts, desta forma o processo de construção levará em conta apenas a construção do DW. Além disso, todo o projeto será criado para arquitetura chamada On-Premises, ou seja, o DW ficará armazenado em um servidor próprio da empresa, localizado em seu Datacenter particular.
 
-O passo seguinte foi a descrição do projeto de ETL, sendo utilizado o software Pentaho Data Integration (PDI) para auxiliar sua criação. Foram realizadas a extração dos dados (Table input) das dimensões prontidão SUB, prontidão SPO, cronograma de sondas, base de poços, integridade e entrada de poços novos. Primeiramente foram realizados os ETLs do transacional e posteriormente o carregamento nas dimensões no DW, conforme mostrado nas figuras abaixo (nem todos as imagens estarão com o check em verde pois foi a foto não foi tirada no momento em que foi rodado). Em geral, foram utilizados os tratamentos de “string operations” para retirar possíveis espaços e formatar os dados em maiúsculo/minúsculo, "if field value is null” para substituir campos nulos, “concat Fields” para inclusão de uma coluna de status detalhado que concatena duas colunas existentes (status e identificação problema) “e “select values” para ordenar e renomear colunas. 
+O passo seguinte foi a descrição do projeto de ETL, sendo utilizado o software Pentaho Data Integration (PDI) para auxiliar sua criação. Foram realizadas a extração dos dados (Table input) das dimensões prontidão SUB, prontidão SPO, cronograma de sondas, base de poços, integridade e entrada de poços novos. Primeiramente, foram realizados os ETLs do transacional e posteriormente o carregamento nas dimensões no DW, conforme mostrado nas figuras abaixo (nem todos as imagens estarão com o check em verde pois foi a foto não foi tirada no momento em que foi rodado). Em geral, foram utilizados os tratamentos de “string operations” para retirar possíveis espaços e formatar os dados em maiúsculo/minúsculo, "if field value is null” para substituir campos nulos, “concat Fields” para inclusão de uma coluna de status detalhado que concatena duas colunas existentes (status e identificação problema) “e “select values” para ordenar e renomear colunas. 
 
 Dimensão prontidaospo: 
 ![image](https://github.com/user-attachments/assets/80726113-a02e-4201-8605-5b924b3a1bb0)
@@ -85,7 +85,7 @@ O segundo dashboard construído foi o de atendimento a poços novos. Nesta tela 
 
 ![image](https://github.com/user-attachments/assets/82a1f8ee-9959-4030-90a1-20bc898fbbe4)
 
-O terceiro dashboard realizado foi o de atendimento a datas de integridade. Nesta tela é possível visualizar o atendimento dos poços quanto à data de integridade. Alguns poços apresentam necessidades relacionadas a integridade para as quais há um prazo limite para solução. O não atendimento pode gerar riscos operacionais além de multas, sendo esse acompanhamento fundamental. Os filtros existentes permitem filtrar por ano, campo e cluster. Neste dashboard, é possível identificar os poços para os quais é necessário remanejamento ou acompanhamento, a visão de percentual de atendimento, o atendimento ano a ano, além de uma tabela resumo com as principais informações. Os filtros existentes permitem filtrar por ano, campo e cluster.
+O terceiro dashboard realizado foi o de atendimento a datas de integridade. Nesta tela é possível visualizar o atendimento dos poços quanto à data de integridade. Alguns poços apresentam necessidades relacionadas a integridade para as quais há um prazo limite para solução. O não atendimento pode gerar riscos operacionais além de multas, sendo esse acompanhamento fundamental. Os filtros existentes permitem filtrar por ano, campo e cluster. Neste dashboard, é possível identificar os poços para os quais é necessário remanejamento ou acompanhamento, a visão de percentual de atendimento, o atendimento ano a ano, além de uma tabela resumo com as principais informações. 
 
 ![image](https://github.com/user-attachments/assets/361cec61-acd4-4016-9be0-6cd2c3c9b6e6)
 
@@ -96,7 +96,7 @@ O quarto e último dashboard projetado foi o de visão de prontidão de atividad
 
 ### 4. Conclusões
 
-Este trabalo foi uma oportunidade de desenvolver todo o processo do BI. A partir do levantamento e descrição do modelo transacional por meio de planilhas extraídas e entrevistas foi possível fazer a proposta do processo de BI, com o desenvolvimento do Modelo Multidimensional e criação do Data Warehouse. A elaboração dos Dashboards visou o atendimento dos requisitos levantados com a área.
+Este trabalo foi uma oportunidade de desenvolver todo o processo do BI. A partir do levantamento e descrição do modelo transacional por meio de planilhas e entrevistas foi possível fazer a proposta do processo de BI, com o desenvolvimento do Modelo Multidimensional e criação do Data Warehouse. A elaboração dos Dashboards visou o atendimento dos requisitos levantados com a área.
 
 Desta forma, será possível ter informações atualizadas sobre o negócio de maneira rápida e intuitiva o que permitirá um acompanhamento contínuo e uma rápida e assertiva tomada de decisão a fim de atingir todos os objetivos de entrada em produção de poços novos, de atendimento de datas de integridade e de realização das atividades de modo geral.
 
