@@ -82,12 +82,20 @@ Finalmente, foram elaborados, através do Power BI, os dashboards para atendimen
 Com objetivo principal de fornecer as informações atualizadas e alinhadas com o plano e requisitos da área, as telas dos dashboards não só atendem as informações requeridas como aprofundam a um nível de detalhe de modo que a gestão tome ação baseada em evidência sobre não atendimento de questões de integridade, não atendimento de datas de entrada de poços novos e sobre situações de falta de prontidão para realização das atividades.
 
 O primeiro dashboard elaborado foi o de visão geral do cronograma de atividades de sondas. Nesta tela é possível visualizar o total de dias de sonda no período, a quantidade de sondas equivalentes (cálculo da quantidade de sondas necessária para atendimento do total), a visão de dias de sonda por tipo de tarefa, a visão de dias de sonda por campo e uma tabela com as principais informações do cronograma. O filtro de ano possibilita selecionar o(s) ano(s) desejado(s).
+
 ![image](https://github.com/user-attachments/assets/cc011c96-5418-4491-b319-f456f47002dc)
 
-O segundo dashboard construido foi o de atendimento a poços novos. Nesta tela é possível visualizar o atendimento dos poços quanto à data de entrada em produção planejada e quanto à data de entrada em produção considerando oportunidades e ameaças (O&A). O atendimento considera uma folga de pelo menos 60 dias após o término da atividade de completação (realizada com sonda) para a interligação do poço. Os filtros existentes permitem filtrar por ano, campo e cluster.
-![image](https://github.com/user-attachments/assets/3f0bca9d-f7eb-4c57-b75b-152a7cbc3987)
+O segundo dashboard construído foi o de atendimento a poços novos. Nesta tela é possível visualizar o atendimento dos poços quanto à data de entrada em produção planejada e quanto à data de entrada em produção considerando oportunidades e ameaças (O&A). O atendimento considera uma folga de pelo menos 60 dias após o término da atividade de completação (realizada com sonda) para a interligação do poço. Os filtros existentes permitem filtrar por ano, campo e cluster.
 
+![image](https://github.com/user-attachments/assets/82a1f8ee-9959-4030-90a1-20bc898fbbe4)
 
+O terceiro dashboard realizado foi o de o de atendimento a datas de integridade. Nesta tela é possível visualizar o atendimento dos poços quanto à data de integridade. Alguns poços apresentam necessidades relacionadas a integridade para as quais há um prazo limite para solução. O não atendimento pode gerar riscos operacionais além de multas, sendo esse acompanhamento fundamental. Os filtros existentes permitem filtrar por ano, campo e cluster. Neste dashboard, é possível identificar os poços para os quais é necessário remanejamento ou acompanhamento, a visão de percentual de atendimento, o atendimento ano a ano, além de uma tabela resumo com as principais informações. Os filtros existentes permitem filtrar por ano, campo e cluster.
+
+![image](https://github.com/user-attachments/assets/361cec61-acd4-4016-9be0-6cd2c3c9b6e6)
+
+O quarto e último dashboard projetado foi o de visão de prontidão de atividades. Existem duas disciplinas que analisam e definem a situação de prontidão para realização das atividades, informando se atendem ou não atendem a atividade na data em que está programada no cronograma de sondas, são elas: Equipamentos Submarinos (SUB) e Poços (SPO – Situação de Prontidão Operacional). Nesta tela do dashboard do Power BI com informações de prontidão, é possível visualizar a situação de atendimento de cada disciplina assim como o status final. Os filtros existentes permitem filtrar por ano e cluster. A visão de prontidão é muito importante para se ter um acompanhamento da situação das atividades e identificar necessidades de remanejamento.
+
+![image](https://github.com/user-attachments/assets/e920946d-32c9-4d57-95aa-d182081c5b14)
 
 
 ### 4. Conclusões
