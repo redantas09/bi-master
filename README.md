@@ -45,7 +45,34 @@ Na sequência, foi definido o modelo multidimensional referente ao presente proj
 
 Prosseguiu-se, então, para a elaboração do Data Warehouse, que será a fonte integradora de informações da área. A arquitetura do DW será Global e Centralizada, pois embora outras áreas atuem no processo, o controle da programação é feito pela área em questão. Como a arquitetura será Global e Centralizada não serão construídos Data Marts, desta forma o processo de construção levará em conta apenas a construção do DW. Além disso, todo o projeto será criado para arquitetura chamada On-Premises, ou seja, o DW ficará armazenado em um servidor próprio da empresa, localizado em seu Datacenter particular.
 
-O passo seguinte foi a descrição do projeto de ETL, sendo utilizado o software Pentaho Data Integration (PDI) para auxiliar sua criação. Foram realizadas a extração dos dados (Table input) das dimensões prontidão SUB, prontidão SPO, cronograma de sondas, base de poços, integridade e entrada de poços novos. Primeiramente foram realizados os ETLs do transacional e posteriormente o carregamento nas dimensões no DW. Em geral, foram utilizados os tratamentos de “string operations” para retirar possíveis espaços e formatar os dados em maiúsculo/minúsculo, "if field value is null” para substituir campos nulos, “concat Fields” para inclusão de uma coluna de status detalhado que concatena duas colunas existentes (status e identificação problema) “e “select values” para ordenar e renomear colunas.
+O passo seguinte foi a descrição do projeto de ETL, sendo utilizado o software Pentaho Data Integration (PDI) para auxiliar sua criação. Foram realizadas a extração dos dados (Table input) das dimensões prontidão SUB, prontidão SPO, cronograma de sondas, base de poços, integridade e entrada de poços novos. Primeiramente foram realizados os ETLs do transacional e posteriormente o carregamento nas dimensões no DW, conforme mostrado nas figuras abaixo (nem todos as imagens estarão com o check em verde pois foi a foto não foi tirada no momento em que foi rodado). Em geral, foram utilizados os tratamentos de “string operations” para retirar possíveis espaços e formatar os dados em maiúsculo/minúsculo, "if field value is null” para substituir campos nulos, “concat Fields” para inclusão de uma coluna de status detalhado que concatena duas colunas existentes (status e identificação problema) “e “select values” para ordenar e renomear colunas. 
+
+Dimensão prontidaospo: 
+![image](https://github.com/user-attachments/assets/80726113-a02e-4201-8605-5b924b3a1bb0)
+![image](https://github.com/user-attachments/assets/f1065ff3-c458-4752-a23a-391a8c8f71d5)
+
+Dimensão prontidaosub:
+![image](https://github.com/user-attachments/assets/043dc0b7-e62c-4464-8847-edc7015137eb)
+![image](https://github.com/user-attachments/assets/74ad6fc2-a5c8-4beb-9eab-685ca96f7af8)
+
+Dimensão cronosondas:
+![image](https://github.com/user-attachments/assets/911978ac-91ec-4fe3-9bea-3f199bfb16ed)
+![image](https://github.com/user-attachments/assets/1e3d4aa7-38e9-4ffb-ab4a-e54f18116659)
+
+Dimensão basepocos:
+![image](https://github.com/user-attachments/assets/90b13cd3-f889-430f-9952-d35157dd96d5)
+![image](https://github.com/user-attachments/assets/7cb883bb-0e7c-431c-a92c-2d1e89939166)
+
+Dimensão integridade:
+![image](https://github.com/user-attachments/assets/e17ecf12-62e5-40cc-be2a-fad6a4657e82)
+![image](https://github.com/user-attachments/assets/141173c1-21ce-48f2-a620-fff3dabb53ec)
+
+Dimensão entradapocosnovos:
+![image](https://github.com/user-attachments/assets/d85c47a0-0e1a-41bb-8947-385da396afa3)
+![image](https://github.com/user-attachments/assets/40fd04d1-4195-46c5-aa3b-4fe8d8d245d2)
+
+No caso da tabela fato sondas, foi realizado o carregamento no Data Warehouse (Dimension look-up/updade e Table output), utilizando comparação para não haver duplicação de dados (Delete).
+![image](https://github.com/user-attachments/assets/dfcfacf4-5302-42d3-b1ad-3614b4879212)
 
 Finalmente, foram elaborados, através do Power BI, os dashboards para atendimento às necessidades da área, cujos resultados serão apresentados no item seguinte.
 
