@@ -84,6 +84,10 @@ Com objetivo principal de fornecer as informações atualizadas e alinhadas com 
 O primeiro dashboard elaborado foi o de visão geral do cronograma de atividades de sondas. Nesta tela é possível visualizar o total de dias de sonda no período, a quantidade de sondas equivalentes (cálculo da quantidade de sondas necessária para atendimento do total), a visão de dias de sonda por tipo de tarefa, a visão de dias de sonda por campo e uma tabela com as principais informações do cronograma. O filtro de ano possibilita selecionar o(s) ano(s) desejado(s).
 ![image](https://github.com/user-attachments/assets/cc011c96-5418-4491-b319-f456f47002dc)
 
+O segundo dashboard construido foi o de atendimento a poços novos. Nesta tela é possível visualizar o atendimento dos poços quanto à data de entrada em produção planejada e quanto à data de entrada em produção considerando oportunidades e ameaças (O&A). O atendimento considera uma folga de pelo menos 60 dias após o término da atividade de completação (realizada com sonda) para a interligação do poço. Os filtros existentes permitem filtrar por ano, campo e cluster.
+![image](https://github.com/user-attachments/assets/3f0bca9d-f7eb-4c57-b75b-152a7cbc3987)
+
+
 
 
 ### 4. Conclusões
