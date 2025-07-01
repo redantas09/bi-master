@@ -1,5 +1,4 @@
-<!-- antes de enviar a versão final, solicitamos que todos os comentários, colocados para orientação ao aluno, sejam removidos do arquivo -->
-# Nome do projeto
+# BI para visão de cronograma de atividades de sondas
 
 #### Aluno: [Renata Aparecida Dantas Carneiro de Mesquita](https://github.com/link_do_github)
 #### Orientador: [Anderson nascimento](https://github.com/link_do_github).
@@ -13,10 +12,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 ### Resumo
 
-<!-- trocar o texto abaixo pelo resumo do trabalho, em português -->
-
-O presente trabalho tem como objetivo coletar, analisar e definir as principais necessidades do projeto de construção de uma visão de atendimento relacionada a cronograma de atividades de sonda. 
-O trabalho passa pela descrição do modelo transacional e percorre todo o processo de BI, com a definição do modelo multidimensional, elaboração do Data Warehouse, projeto de ETL e elaboração de dashboards.
+O presente trabalho tem como objetivo coletar, analisar e definir as principais necessidades do projeto de construção de uma visão de atendimento relacionada a cronograma de atividades de sonda. O trabalho passa pela descrição do modelo transacional e percorre todo o processo de BI, com a definição do modelo multidimensional, elaboração do Data Warehouse, projeto de ETL e elaboração de dashboards.
 
 ### 1. Introdução
 
@@ -89,7 +85,7 @@ O segundo dashboard construído foi o de atendimento a poços novos. Nesta tela 
 
 ![image](https://github.com/user-attachments/assets/82a1f8ee-9959-4030-90a1-20bc898fbbe4)
 
-O terceiro dashboard realizado foi o de o de atendimento a datas de integridade. Nesta tela é possível visualizar o atendimento dos poços quanto à data de integridade. Alguns poços apresentam necessidades relacionadas a integridade para as quais há um prazo limite para solução. O não atendimento pode gerar riscos operacionais além de multas, sendo esse acompanhamento fundamental. Os filtros existentes permitem filtrar por ano, campo e cluster. Neste dashboard, é possível identificar os poços para os quais é necessário remanejamento ou acompanhamento, a visão de percentual de atendimento, o atendimento ano a ano, além de uma tabela resumo com as principais informações. Os filtros existentes permitem filtrar por ano, campo e cluster.
+O terceiro dashboard realizado foi o de atendimento a datas de integridade. Nesta tela é possível visualizar o atendimento dos poços quanto à data de integridade. Alguns poços apresentam necessidades relacionadas a integridade para as quais há um prazo limite para solução. O não atendimento pode gerar riscos operacionais além de multas, sendo esse acompanhamento fundamental. Os filtros existentes permitem filtrar por ano, campo e cluster. Neste dashboard, é possível identificar os poços para os quais é necessário remanejamento ou acompanhamento, a visão de percentual de atendimento, o atendimento ano a ano, além de uma tabela resumo com as principais informações. Os filtros existentes permitem filtrar por ano, campo e cluster.
 
 ![image](https://github.com/user-attachments/assets/361cec61-acd4-4016-9be0-6cd2c3c9b6e6)
 
@@ -100,13 +96,11 @@ O quarto e último dashboard projetado foi o de visão de prontidão de atividad
 
 ### 4. Conclusões
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
+Este trabalo foi uma oportunidade de desenvolver todo o processo do BI. A partir do levantamento e descrição do modelo transacional por meio de planilhas extraídas e entrevistas foi possível fazer a proposta do processo de BI, com o desenvolvimento do Modelo Multidimensional e criação do Data Warehouse. A elaboração dos Dashboards visou o atendimento dos requisitos levantados com a área.
 
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
+Desta forma, será possível ter informações atualizadas sobre o negócio de maneira rápida e intuitiva o que permitirá um acompanhamento contínuo e uma rápida e assertiva tomada de decisão a fim de atingir todos os objetivos de entrada em produção de poços novos, de atendimento de datas de integridade e de realização das atividades de modo geral.
 
----
-
-Matrícula: 123.456.789
+Matrícula: 231.100.004
 
 Pontifícia Universidade Católica do Rio de Janeiro
 
