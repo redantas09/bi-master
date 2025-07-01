@@ -1,4 +1,4 @@
-# BI para visão de cronograma de atividades de sondas
+# BI para Visão de Cronograma de Atividades de Sondas
 
 #### Aluno: [Renata Aparecida Dantas Carneiro de Mesquita](https://github.com/link_do_github)
 #### Orientador: [Anderson nascimento](https://github.com/link_do_github).
